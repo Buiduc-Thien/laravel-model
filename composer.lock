@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe33f98a750b8c5a51b30c78bd3fab21",
+    "content-hash": "8c3f5b6797123bad750b05a38b0815d8",
     "packages": [
         {
             "name": "brick/math",
@@ -1706,6 +1706,41 @@
                 }
             ],
             "time": "2022-04-17T13:12:02+00:00"
+        },
+        {
+            "name": "model/package",
+            "version": "dev-dev",
+            "dist": {
+                "type": "path",
+                "url": "./modules/Model-Package",
+                "reference": "db592ad11f68bd9a5f127d1f8e406668fd4bc2bb"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "ModelsPackage\\Laravel\\Product\\Providers\\ProductServiceProvider",
+                        "ModelsPackage\\Laravel\\User\\Providers\\UserServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ModelsPackage\\Laravel\\Product\\": "src/product/src/app/",
+                    "ModelsPackage\\Laravel\\User\\": "src/user/src/app/",
+                    "ModelsPackage\\Laravel\\Models\\": "src/models/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Bui Duc Thien",
+                    "email": "buithien160@gmail.com"
+                }
+            ],
+            "description": "The Model Package",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "monolog/monolog",
@@ -7935,7 +7970,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "model/package": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
