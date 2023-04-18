@@ -1847,7 +1847,7 @@
             "dist": {
                 "type": "path",
                 "url": "./modules/Model-Package",
-                "reference": "bf7a29a88bb622e4e49a0518d8947aa07bca4f36"
+                "reference": "0c89b79670358f2680eddfef25cf8afe544dca08"
             },
             "require": {
                 "tymon/jwt-auth": "^2.0"
